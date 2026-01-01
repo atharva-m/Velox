@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# Model artifacts
+*.pth
+classes.json
+
+# Data
+discoveries/
+*.jpg
+*.png
+
+# Docker
+mongo_data/
+
+# IDE
+.idea/
+.vscode/
+*.swp
