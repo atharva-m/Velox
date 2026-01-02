@@ -45,7 +45,7 @@ class DiscoverySaver:
             self.collection = self.db["shapes_found"]
             logging.info("Connected to MongoDB.")
 
-        except:
+        except Exception:
             self.client = None
 
         self.executor = ThreadPoolExecutor(max_workers=4)

@@ -39,6 +39,9 @@ logs/
 htmlcov/
 .tox/
 
+# Benchmarking
+benchmark.py
+
 # OS
 .DS_Store
 Thumbs.db
