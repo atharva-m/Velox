@@ -52,7 +52,7 @@ Tested on NVIDIA RTX 4070 with Minikube (8 CPUs, 20GB RAM):
 
 | Metric | Single Process | Kubernetes (8 pods) | Improvement |
 |--------|---------------|---------------------|-------------|
-| **Throughput** | 1190 img/sec | 9,616 img/sec | **8.8x** |
+| **Throughput** | 1190 img/sec | 9,616 img/sec | **8x** |
 | **Per-Pod Throughput** | — | 1202 img/sec | — |
 | **Peak Throughput** | — | 10,050 img/sec | — |
 | **Model Confidence** | 100% | 98.5% | — |
