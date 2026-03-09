@@ -26,9 +26,9 @@ This project implements a **production-ready, real-time image classification pip
 
 ### Key Features
 
-- **High Throughput** — 1,683 images/sec with 8 GPU-accelerated pods
+- **High Throughput** — 9,616 images/sec with 8 GPU-accelerated pods
 - **GPU Time-Slicing** — 8 pods share a single NVIDIA GPU efficiently
-- **8.8x Scaling** — From 192 img/sec (single) to 1,683 img/sec (distributed)
+- **8.8x Scaling** — From 1190 img/sec (single) to 9,616 img/sec (distributed)
 - **Horizontal Pod Autoscaling** — Automatic scaling from 1-8 pods based on CPU utilization
 - **High Accuracy** — 98.5% model confidence on shape classification
 - **Observable** — Built-in Prometheus metrics and Grafana dashboards
@@ -52,9 +52,9 @@ Tested on NVIDIA RTX 4070 with Minikube (8 CPUs, 20GB RAM):
 
 | Metric | Single Process | Kubernetes (8 pods) | Improvement |
 |--------|---------------|---------------------|-------------|
-| **Throughput** | 192 img/sec | 1,683 img/sec | **8.8x** |
-| **Per-Pod Throughput** | — | 210 img/sec | — |
-| **Peak Throughput** | — | 1,949 img/sec | — |
+| **Throughput** | 1190 img/sec | 9,616 img/sec | **8.8x** |
+| **Per-Pod Throughput** | — | 1202 img/sec | — |
+| **Peak Throughput** | — | 10,050 img/sec | — |
 | **Model Confidence** | 100% | 98.5% | — |
 
 ### Resource Utilization
@@ -244,7 +244,7 @@ Use the provided management script for one-command deployment:
 
 ### GPU Time-Slicing
 
-This project uses NVIDIA GPU time-slicing to allow 8 consumer pods to share a single GPU, achieving **8.8x throughput scaling**.
+This project uses NVIDIA GPU time-slicing to allow 8 consumer pods to share a single GPU, achieving **8x throughput scaling**.
 
 ```yaml
 # gpu-sharing-config.yaml
